@@ -282,7 +282,7 @@ article.active {
   z-index: -1;
 }
 
-.content-card:hover {
+.content-card:hover, .content-card:focus {
   background: var(--green);
 }
 
@@ -474,9 +474,9 @@ main {
   transition: color var(--transition-1);
 }
 
-.navbar-link:hover { color: var(--green); }
-engr
-.navbar-link.active { color: var(--green); }
+.navbar-link:hover, .active  {
+  color: var(--green);
+}
 
 
 
@@ -735,6 +735,7 @@ engr
 .clients-item {
   min-width: 50%;
   scroll-snap-align: start;
+  min-height: 100%;
 }
 
 .clients-item img {

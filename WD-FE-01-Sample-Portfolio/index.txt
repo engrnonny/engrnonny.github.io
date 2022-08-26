@@ -20,7 +20,7 @@ June 23, 1982
 Location
 Sacramento, California, USA
 
-# navbar
+# mynavbar
 
 About
 Resume

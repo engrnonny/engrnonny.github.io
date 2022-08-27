@@ -3,7 +3,7 @@
 
 
 // element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+const elementToggleFunc = function (elem) { elem.classList.toggle("myactive"); }
 
 
 
@@ -29,8 +29,8 @@ const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
+  modalContainer.classList.toggle("myactive");
+  overlay.classList.toggle("myactive");
 }
 
 // add click event to all modal items
@@ -83,11 +83,11 @@ const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
+      filterItems[i].classList.add("myactive");
     } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
+      filterItems[i].classList.add("myactive");
     } else {
-      filterItems[i].classList.remove("active");
+      filterItems[i].classList.remove("myactive");
     }
 
   }
@@ -105,8 +105,8 @@ for (let i = 0; i < filterBtn.length; i++) {
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
+    lastClickedBtn.classList.remove("myactive");
+    this.classList.add("myactive");
     lastClickedBtn = this;
 
   });
@@ -146,12 +146,12 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
     for (let i = 0; i < pages.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+        pages[i].classList.add("myactive");
+        navigationLinks[i].classList.add("myactive");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[i].classList.remove("myactive");
+        navigationLinks[i].classList.remove("myactive");
       }
     }
 

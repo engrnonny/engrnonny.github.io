@@ -12,8 +12,8 @@
   );
   --bg-gradient-jet: linear-gradient(
       to bottom right,
-      hsla(240, 1%, 18%, 0.251) 0%,
-      hsla(240, 2%, 11%, 0) 100%
+      hsla(0, 66%, 7%, 0.251) 0%,
+      hsla(124, 100%, 6%, 0) 100%
     ),
     hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
@@ -29,17 +29,17 @@
     hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right,
-    hsl(0, 0%, 25%) 0%,
+    hsl(0, 71%, 16%) 0%,
     hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right,
-    hsl(45, 100%, 72%),
-    hsl(35, 100%, 68%)
+    hsl(108, 100%, 72%),
+    hsl(133, 97%, 58%)
   );
 
   /* solid */
-  --light-brown: #BC1C18;
+  --light-brown: #f0322f;
   --dark-brown: #960300;
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
@@ -49,7 +49,7 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --purple: #6C57E6;
+  --purple: #87ceeb;
   --green: #48E640;
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -725,6 +725,7 @@ main {
   color: var(--white-2);
   font-size: 18px;
   opacity: 0.7;
+  z-index: 1;
 }
 
 .modal-close-btn:hover,
@@ -1368,6 +1369,7 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box img {
     width: 120px;
+    border-radius: 20px;
   }
 
   .info-content .name {
@@ -1905,6 +1907,7 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box img {
     width: 150px;
+    border-radius: 20px;
   }
 
   .info-content .name {

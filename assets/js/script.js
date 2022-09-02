@@ -157,3 +157,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+$(document).ready(function(){
+
+  // typing text animation script
+  var typed = new Typed(".typing", {
+      strings: ["Student" , "Programmer", "Web Developer", "Blogger", "Graphic Designer"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+  });
+
+});

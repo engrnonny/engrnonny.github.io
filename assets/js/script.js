@@ -162,7 +162,7 @@ $(document).ready(function(){
 
   // typing text animation script
   var typed = new Typed(".typing", {
-      strings: ["Student" , "Programmer", "Web Developer", "Blogger", "Graphic Designer"],
+      strings: ["Building &amp; Interior Designer", "Civil &amp; QAQC Engineer", "Product Designer", "Full Stack Web Developer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true

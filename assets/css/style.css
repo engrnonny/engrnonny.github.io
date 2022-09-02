@@ -499,6 +499,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  margin-bottom: 0;
 }
 
 .mynavbar-link {
@@ -531,6 +532,20 @@ main {
 .about-text p {
   margin-bottom: 15px;
 }
+
+.about-typing {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs-5);
+  margin-bottom: 10px;
+}
+
+.typing {
+  margin-left: 7px;
+  color: var(--purple);
+}
+
+
 
 /**
  * #service

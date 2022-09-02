@@ -499,7 +499,8 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  padding: -10px 10px;
+  margin: -10px 0;
 }
 
 .mynavbar-link {
@@ -1274,6 +1275,7 @@ textarea.form-input::-webkit-resizer {
   justify-content: center;
   color: var(--white-2);
   font-size: var(--fs-8);
+  font-weight: lighter;
 }
 
 #mobile-footer a {
@@ -1289,6 +1291,11 @@ textarea.form-input::-webkit-resizer {
 .funny-card span {
   margin: 0 10px;
   color: var(--white-2);
+}
+
+
+footer {
+  padding: 1px 15px;
 }
 
 /*-----------------------------------*\
@@ -1862,6 +1869,7 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
     color: var(--white-2);
     font-size: var(--fs-8);
+    font-weight: lighter;
   }
 
   #main-footer a {
@@ -1959,7 +1967,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .info-content .name {
-    white-space: nowrap;
+    white-space: pre-line;
     text-align: center;
   }
 

@@ -2,13 +2,6 @@
  * style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
 
 /*-----------------------------------*\
  * #CUSTOM PROPERTY
@@ -30,7 +23,7 @@
    * typography
    */
 
-  --ff-saira-stencil-one: "Saira Stencil One", sans-serif; 
+  --ff-saira-stencil-one: "Saira Stencil One", sans-serif;
   --ff-poppins: 'Poppins', sans-serif;
   --ff-roboto: 'Roboto', sans-serif;
 
@@ -476,7 +469,44 @@ main { overflow-x: hidden; }
   max-width: 500px;
   width: 125%;
   margin-bottom: 30px;
+  background: url("../images/splash-paint.png") center/cover;
+  overflow: hidden;
+  animation: hue 10s infinite alternate;
 }
+
+
+.hero-banner::after{
+    content: '';
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(2rem);
+    z-index: -1;
+    transform: scale(1.15);
+}
+
+
+@keyframes hue {
+    from{
+        filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.hero-banner picture {
+  animation: unset;
+}
+
+.hero-banner picture::after {
+  animation: unset;
+  background: none;
+  filter: unset;
+  transform: unsetg;
+}
+
 
 :is(.hero-social-list, .scroll-down) { display: none; }
 

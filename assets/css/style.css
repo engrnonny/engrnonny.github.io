@@ -32,6 +32,11 @@
     hsl(0, 0%, 25%) 0%,
     hsla(0, 0%, 25%, 0) 50%
   );
+  --text-gradient-green: linear-gradient(
+    to right,
+    hsl(45, 100%, 72%),
+    hsla(101, 98%, 52%, 0.628)
+  );
   --text-gradient-yellow: linear-gradient(
     to right,
     hsl(45, 100%, 72%),
@@ -907,12 +912,16 @@ main {
   margin-left: 45px;
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: 30px;
+  padding: 15px;
   padding-top: 25px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   cursor: pointer;
   z-index: 1;
+}
+
+.skills-item {
+  padding: 10px;
 }
 
 .skills-item:not(:last-child) {
@@ -926,7 +935,15 @@ main {
   margin-bottom: 8px;
 }
 
-.skill .title-wrapper data {
+.skills-item .title-wrapper h5 {
+  color: var(--green);
+}
+
+.skills-item .title-wrapper data {
+  float: right;
+}
+
+.skill .title-wrapper {
   color: var(--light-gray);
   font-size: var(--fs-7);
   font-weight: var(--fw-300);
@@ -943,6 +960,46 @@ main {
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
+}
+
+.accordion {
+  padding: 0;
+  --bs-accordion-color: unset;
+}
+
+.accordion-item {
+  background: var(--border-gradient-onyx);
+  border: var(--border-gradient-onyx);
+  z-index: 1;
+}
+
+.accordion-item:hover,
+.accordion-item:active,
+.accordion-item:focus {
+  border: 2px solid var(--green);
+  box-shadow: var(--shadow-2);
+}
+
+.accordion-item button {
+  margin-right: 0;
+  text-align: unset;
+  width: 100%;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  content: "";
+  background-image: unset;
+  background-repeat: unset;
+  background-size: 0;
+  transition: none;
+}
+
+.accordion-body .title-wrapper h5 {
+  color: var(--purple);
 }
 
 /*-----------------------------------*\

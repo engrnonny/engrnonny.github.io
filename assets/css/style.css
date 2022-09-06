@@ -943,6 +943,15 @@ main {
   float: right;
 }
 
+.popover {
+  max-width: 100%;
+  width: 80%;
+  --bs-popover-max-width: 100%;
+  background-color: inherit;
+  --bs-popover-body-color: var(--white-2);
+  --bs-popover-border-color: var(--bs-border-color-translucent);
+}
+
 .skill .title-wrapper {
   color: var(--light-gray);
   font-size: var(--fs-7);

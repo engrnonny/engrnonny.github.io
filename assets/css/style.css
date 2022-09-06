@@ -963,6 +963,7 @@ main {
 }
 
 .accordion {
+  margin-bottom: 10px;
   padding: 0;
   --bs-accordion-color: unset;
 }
@@ -971,11 +972,13 @@ main {
   background: var(--border-gradient-onyx);
   border: var(--border-gradient-onyx);
   z-index: 1;
+  margin-bottom: 15px;
 }
 
 .accordion-item:hover,
 .accordion-item:active,
-.accordion-item:focus {
+.accordion-item:focus,
+.accordion-item:visited {
   border: 2px solid var(--green);
   box-shadow: var(--shadow-2);
 }
@@ -1000,6 +1003,15 @@ main {
 
 .accordion-body .title-wrapper h5 {
   color: var(--purple);
+}
+
+.accordion-body .skills-item:hover .h5 {
+  color: var(--green);
+}
+
+.accordion-body .skills-item:hover .skill-progress-fill {
+  border: 2px solid var(--green);
+  box-shadow: var(--shadow-2);
 }
 
 /*-----------------------------------*\

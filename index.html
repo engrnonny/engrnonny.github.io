@@ -28,8 +28,14 @@
             rel="stylesheet">
 
 
+        <!--
+            - JavaScript links
+          -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -790,30 +796,83 @@
                             <h3 class="h3">Skills</h3>
                         </div>
 
-                        <ol class="skills-list">
-                            <div class="accordion" id="accordionExample">
+                            <div class="accordion skills-list" id="accordionSkillsList">
                                 <div class="accordion-item">
-                                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <li class="skills-item">
+                                <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBuildingDesign"
+                                    aria-expanded="false" aria-controls="collapseBuildingDesign">
+                                    <div class="skills-item">
+
+                                        <div class="title-wrapper">
+                                            <h5 class="h5">Building Design</h5>
+                                            <data value="90">90%</data>
+                                        </div>
+
+                                        <div class="skill-progress-bg">
+                                            <div class="skill-progress-fill" style="width: 90%;"></div>
+                                        </div>
+
+                                    </div>
+                                </button>
+                                <div id="collapseBuildingDesign" class="accordion-collapse collapse" aria-labelledby="headingBuildingDesign"
+                                    data-bs-parent="#accordionSkillsList">
+                                    <div class="accordion-body">
+
+                                        <li class="skills-item" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="And here's some amazing content. It's very engaging. Right?" tabindex="0">
 
                                             <div class="title-wrapper">
-                                                <h5 class="h5">Building Design</h5>
-                                                <data value="90">90%</data>
+                                                <h5 class="h5">3DS Max</h5>
+                                                <data value="50">50%</data>
                                             </div>
 
                                             <div class="skill-progress-bg">
-                                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                                                <div class="skill-progress-fill" style="width: 50%;"></div>
                                             </div>
 
                                         </li>
-                                    </button>
-                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
 
                                         <li class="skills-item">
 
                                             <div class="title-wrapper">
-                                                <h5 class="h5">Business Development</h5>
+                                                <h5 class="h5">Architectural Plans</h5>
+                                                <data value="80">80%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">AutoCAD</h5>
+                                                <data value="80">80%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">Design Process</h5>
+                                                <data value="70">70%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 70%;"></div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">MEP Plans</h5>
                                                 <data value="60">60%</data>
                                             </div>
 
@@ -822,23 +881,342 @@
                                             </div>
 
                                         </li>
+
+                                        <li class="skills-item" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="I can prepare complex Architecture and Engineering construction drawings for residential and commercial projects utilizing AutoCAD Architecture and REVIT" data-ba-animation="true" tabindex="0">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">Revit</h5>
+                                                <data value="95">95%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 95%;"></div>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">VRay</h5>
+                                                <data value="65">65%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 65%;"></div>
+                                            </div>
+
+                                        </li>
                                     </div>
-                                  </div>
                                 </div>
-                              </div>
-
-                            <li class="skills-item">
-
-                                <div class="title-wrapper">
-                                    <h5 class="h5">Building Design</h5>
-                                    <data value="90">90%</data>
                                 </div>
+                                <div class="accordion-item">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFullStackDevelopment"
+                                        aria-expanded="false" aria-controls="collapseFullStackDevelopment">
+                                        <div class="skills-item">
 
-                                <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill" style="width: 90%;"></div>
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">Full Stack Development</h5>
+                                                <data value="90">90%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                    <div id="collapseFullStackDevelopment" class="accordion-collapse collapse" aria-labelledby="headingFullStackDevelopment"
+                                        data-bs-parent="#accordionSkillsList">
+                                        <div class="accordion-body">
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Business Development</h5>
+                                                    <data value="60">60%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 60%;"></div>
+                                                </div>
+
+                                            </li>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="accordion-item">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInteriorDesign"
+                                        aria-expanded="false" aria-controls="collapseInteriorDesign">
+                                        <div class="skills-item">
 
-                            </li>
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">Interior Design</h5>
+                                                <data value="90">90%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                    <div id="collapseInteriorDesign" class="accordion-collapse collapse" aria-labelledby="headingInteriorDesign"
+                                        data-bs-parent="#accordionSkillsList">
+                                        <div class="accordion-body">
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Business Development</h5>
+                                                    <data value="60">60%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 60%;"></div>
+                                                </div>
+
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePAndIDDesign"
+                                        aria-expanded="false" aria-controls="collapsePAndIDDesign">
+                                        <div class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">P&amp;ID Design</h5>
+                                                <data value="90">90%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                    <div id="collapsePAndIDDesign" class="accordion-collapse collapse" aria-labelledby="headingPAndIDDesign"
+                                        data-bs-parent="#accordionSkillsList">
+                                        <div class="accordion-body">
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Business Development</h5>
+                                                    <data value="60">60%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 60%;"></div>
+                                                </div>
+
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProductDesign"
+                                        aria-expanded="false" aria-controls="collapseProductDesign">
+                                        <div class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">Product Design</h5>
+                                                <data value="90">90%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                    <div id="collapseProductDesign" class="accordion-collapse collapse" aria-labelledby="headingProductDesign"
+                                        data-bs-parent="#accordionSkillsList">
+                                        <div class="accordion-body">
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Business Development</h5>
+                                                    <data value="60">60%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 60%;"></div>
+                                                </div>
+
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStructuralDesign"
+                                        aria-expanded="false" aria-controls="collapseStructuralDesign">
+                                        <div class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">Structural Design</h5>
+                                                <data value="90">90%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                    <div id="collapseStructuralDesign" class="accordion-collapse collapse" aria-labelledby="headingStructuralDesign"
+                                        data-bs-parent="#accordionSkillsList">
+                                        <div class="accordion-body">
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Business Development</h5>
+                                                    <data value="60">60%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 60%;"></div>
+                                                </div>
+
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSoftSkills"
+                                        aria-expanded="false" aria-controls="collapseSoftSkills">
+                                        <div class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">Soft Skills</h5>
+                                                <data value="90">90%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                    <div id="collapseSoftSkills" class="accordion-collapse collapse" aria-labelledby="headingSoftSkills"
+                                        data-bs-parent="#accordionSkillsList">
+                                        <div class="accordion-body">
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Business Development</h5>
+                                                    <data value="60">60%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 60%;"></div>
+                                                </div>
+
+                                            </li>
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Communication</h5>
+                                                    <data value="85">85%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 85%;"></div>
+                                                </div>
+
+                                            </li>
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Customer Service</h5>
+                                                    <data value="90">90%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 90%;"></div>
+                                                </div>
+
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWriting"
+                                        aria-expanded="false" aria-controls="collapseWriting">
+                                        <div class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">Writing</h5>
+                                                <data value="90">90%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                    <div id="collapseWriting" class="accordion-collapse collapse" aria-labelledby="headingWriting"
+                                        data-bs-parent="#accordionSkillsList">
+                                        <div class="accordion-body">
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Business Development</h5>
+                                                    <data value="60">60%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 60%;"></div>
+                                                </div>
+
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOtherSkills"
+                                        aria-expanded="false" aria-controls="collapseOtherSkills">
+                                        <div class="skills-item">
+
+                                            <div class="title-wrapper">
+                                                <h5 class="h5">Other Skills</h5>
+                                                <data value="90">90%</data>
+                                            </div>
+
+                                            <div class="skill-progress-bg">
+                                                <div class="skill-progress-fill" style="width: 90%;"></div>
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                    <div id="collapseOtherSkills" class="accordion-collapse collapse" aria-labelledby="headingOtherSkills"
+                                        data-bs-parent="#accordionSkillsList">
+                                        <div class="accordion-body">
+
+                                            <li class="skills-item">
+
+                                                <div class="title-wrapper">
+                                                    <h5 class="h5">Micro Excel</h5>
+                                                    <data value="60">60%</data>
+                                                </div>
+
+                                                <div class="skill-progress-bg">
+                                                    <div class="skill-progress-fill" style="width: 60%;"></div>
+                                                </div>
+
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                             <li class="skills-item">
 
@@ -853,85 +1231,6 @@
 
                             </li>
 
-                            <li class="skills-item">
-
-                                <div class="title-wrapper">
-                                    <h5 class="h5">Full-Stack Development</h5>
-                                    <data value="70">70%</data>
-                                </div>
-
-                                <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill" style="width: 70%;"></div>
-                                </div>
-
-                            </li>
-
-                            <li class="skills-item">
-
-                                <div class="title-wrapper">
-                                    <h5 class="h5">Interior Design</h5>
-                                    <data value="40">40%</data>
-                                </div>
-
-                                <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill" style="width: 40%;"></div>
-                                </div>
-
-                            </li>
-
-                            <li class="skills-item">
-
-                                <div class="title-wrapper">
-                                    <h5 class="h5">P&amp;ID Design</h5>
-                                    <data value="40">40%</data>
-                                </div>
-
-                                <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill" style="width: 40%;"></div>
-                                </div>
-
-                            </li>
-
-                            <li class="skills-item">
-
-                                <div class="title-wrapper">
-                                    <h5 class="h5">Product Design</h5>
-                                    <data value="70">70%</data>
-                                </div>
-
-                                <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill" style="width: 70%;"></div>
-                                </div>
-
-                            </li>
-
-                            <li class="skills-item">
-
-                                <div class="title-wrapper">
-                                    <h5 class="h5">Structural Analysis</h5>
-                                    <data value="60">60%</data>
-                                </div>
-
-                                <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill" style="width: 60%;"></div>
-                                </div>
-
-                            </li>
-
-                            <li class="skills-item">
-
-                                <div class="title-wrapper">
-                                    <h5 class="h5">Writing</h5>
-                                    <data value="80">80%</data>
-                                </div>
-
-                                <div class="skill-progress-bg">
-                                    <div class="skill-progress-fill" style="width: 80%;"></div>
-                                </div>
-
-                            </li>
-
-                        </ol>
 
                     </section>
 
@@ -1811,9 +2110,6 @@
           -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-            crossorigin="anonymous"></script>
 
     </body>
 

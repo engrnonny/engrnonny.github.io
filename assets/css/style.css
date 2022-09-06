@@ -944,10 +944,8 @@ main {
 }
 
 .popover {
-  max-width: 100%;
-  width: 80%;
-  --bs-popover-max-width: 100%;
   background-color: inherit;
+  max-width: 800px;
   --bs-popover-body-color: var(--white-2);
   --bs-popover-border-color: var(--bs-border-color-translucent);
 }

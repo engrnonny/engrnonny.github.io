@@ -936,7 +936,7 @@ main {
 }
 
 .skills-item .title-wrapper h5 {
-  color: var(--green);
+  color: var(--white-2);
 }
 
 .skills-item .title-wrapper data {
@@ -945,7 +945,7 @@ main {
 
 .popover {
   background-color: inherit;
-  max-width: 800px;
+  max-width: 700px;
   --bs-popover-body-color: var(--white-2);
   --bs-popover-border-color: var(--bs-border-color-translucent);
 }
@@ -1008,15 +1008,20 @@ main {
   transition: none;
 }
 
-.accordion-body .title-wrapper h5 {
-  color: var(--purple);
+.accordion-body {
+  padding-left: 50px;
+  background: var(--eerie-black-3);
 }
 
-.accordion-body .skills-item:hover .h5 {
+.accordion-body .title-wrapper h5 {
+  color: var(--white-2);
+}
+
+.skills-item:hover .h5 {
   color: var(--green);
 }
 
-.accordion-body .skills-item:hover .skill-progress-fill {
+.skills-item:hover .skill-progress-fill {
   border: 2px solid var(--green);
   box-shadow: var(--shadow-2);
 }

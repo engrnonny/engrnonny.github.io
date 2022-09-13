@@ -1235,8 +1235,16 @@ main {
   align-items: flex-start;
 }
 
+.modal-footer ul {
+  margin-bottom: 15px;
+}
+
 .modal-footer li {
   list-style: inside;
+}
+
+.modal-footer h5 {
+  margin: 15px 0;
 }
 
 .modal-footer h6 {

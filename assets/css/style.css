@@ -213,9 +213,9 @@ article {
   z-index: -1;
 }
 
-.icon-box ion-icon {
+/* .icon-box ion-icon {
   --ionicon-stroke-width: 35px;
-}
+} */
 
 article {
   display: none;
@@ -509,7 +509,7 @@ main {
 
 .mynavbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  font-size: var(--fs-2);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
@@ -754,9 +754,9 @@ main {
   opacity: 1;
 }
 
-.modal-close-btn ion-icon {
+/* .modal-close-btn ion-icon {
   --ionicon-stroke-width: 50px;
-}
+} */
 
 .modal-avatar-box {
   background: var(--bg-gradient-onyx);
@@ -1182,9 +1182,9 @@ main {
   opacity: 1;
 }
 
-.project-item-icon-box ion-icon {
+/* .project-item-icon-box ion-icon {
   --ionicon-stroke-width: 50px;
-}
+} */
 
 .project-img img {
   width: 100%;
@@ -1223,6 +1223,15 @@ main {
 .modal-content .modal-title,
 .modal-content .carousel-caption {
   color: var(--purple);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 4em;
+  height: 4em;
+}
+
+.carousel-control-prev-icon:active, .carousel-control-next-icon:active {
+  color: var(--green);
 }
 
 .modal-content .modal-footer {
